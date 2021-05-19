@@ -1,1 +1,34 @@
+PYGAME BASICS USING PYTHON 3.9.5
+
+To Create the window for game we should use following code:
+
+
+          import pygame, sys, os
+          from pygame.locals import *
+
+          red = [255, 0, 0]
+
+          #initialze pygame
+          pygame.init()
+
+          #set up window
+          window = pygame.display.set_mode(1000, 600)
+          pygame.display.set_caption('slither.eat - The snake game ')
+
+          #set up drawing surface
+          screen = pygame.display.get_surface()
+          screen.fill(red)
+          pygame.display.set_caption("snake")
+          pygame.display.flip()
+
+          count = 0
+
+          while True:
+            print("slither.eat - The snake Game!")
+            for event in pygame.event.get():
+                print(event)
+                if event.type == QUIT:
+                      pygame.quit()
+                      sys.exit()
+              pygame.display.update()
 
