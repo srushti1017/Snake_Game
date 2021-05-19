@@ -43,7 +43,7 @@ It is the snake game which is developed by using pygame
 
     def myquit():
 
-    ''' Self explanatory '''
+    
 
     pygame.quit()
 
@@ -59,7 +59,7 @@ It is the snake game which is developed by using pygame
 
     def snake(blockSize, snakelist):
 
-    #x = 250 - (segment_width + segment_margin) * i
+   
 
     for size in snakelist:
 
